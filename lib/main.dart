@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './neu_piechart.dart';
+import './expenses.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -10,12 +11,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Neumorphic Expenses Pie Chart View',
       theme: ThemeData(    
         scaffoldBackgroundColor: Color.fromRGBO(193, 214, 233, 1),
       ),
       home: Scaffold(
-        body: NeumorphicPieChart(),
+        body: MontlyExpensesView(),
       ),
     );
   }
